@@ -7,27 +7,28 @@
 
 ```
 - (void)viewDidLoad {
-[super viewDidLoad];
+	[super viewDidLoad];
 
-self.student = [[StudentModel alloc] init];
-[self zz_prepareBindView:self.usernameField viewProperty:@"text" model:self.student modelProperty:@"username"];
-[self zz_prepareBindView:self.passwordField viewProperty:@"text" model:self.student modelProperty:@"password"];
-[self zz_prepareBindView:self.scoreField viewProperty:@"text" model:self.student modelProperty:@"score"];
-// [self zz_prepareBindView:self.keyboardNameField viewProperty:@"text" model:self.student.computer.keyboard modelProperty:@"name"];
-[self zz_prepareBindView:self.keyboardNameField viewProperty:@"text" model:self.student modelProperty:@"computer.keyboard.name"];
+	self.student = [[StudentModel alloc] init];
+	// 把self.usernameField的text属性绑定到模型self.student.username上
+	[self zz_prepareBindView:self.usernameField viewProperty:@"text" model:self.student modelProperty:@"username"];
+	[self zz_prepareBindView:self.passwordField viewProperty:@"text" model:self.student modelProperty:@"password"];
+	[self zz_prepareBindView:self.scoreField viewProperty:@"text" model:self.student modelProperty:@"score"];
+	// [self zz_prepareBindView:self.keyboardNameField viewProperty:@"text" model:self.student.computer.keyboard modelProperty:@"name"];
+	[self zz_prepareBindView:self.keyboardNameField viewProperty:@"text" model:self.student modelProperty:@"computer.keyboard.name"];
 }
 
 - (IBAction)submit:(id)sender {
-[self zz_bind];
-[self.student printInfo];
+	[self zz_bind];
+	[self.student printInfo];
 }
 
 - (void)zz_willBind {
-NSLog(@"WillBind");
+	NSLog(@"WillBind");
 }
 
 - (void)zz_afterBind {
-NSLog(@"After Bind");
+	NSLog(@"After Bind");
 }
 
 ```
