@@ -1,5 +1,5 @@
 # ZZBindDemo
-绑定视图和模型
+绑定视图和模型，用于通过简单统一的代码让视图的值填充到模型中
 
 ####使用方法####
 把`ZZBindBaseModel`和`UIView+ZZBind`两个类拖入工程：
