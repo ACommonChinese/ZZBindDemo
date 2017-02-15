@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "computer.h"
 
 @interface StudentModel : NSObject
 
 @property (nonatomic) NSString *username;
 @property (nonatomic) NSString *password;
 @property (nonatomic) NSString *score;
+@property (nonatomic) Computer *computer;
 
 - (void)printInfo;
 @end

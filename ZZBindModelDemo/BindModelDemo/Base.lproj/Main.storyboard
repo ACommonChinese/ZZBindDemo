@@ -36,10 +36,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ByX-ZS-mcg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6cA-bp-0RI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsp-of-lch">
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="a4C-5e-NJx"/>
+                                    <constraint firstAttribute="height" constant="51" id="CwH-ft-0Ys"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="提交">
@@ -52,25 +60,29 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xsp-of-lch" firstAttribute="top" secondItem="ByX-ZS-mcg" secondAttribute="bottom" constant="31" id="EMe-2N-XQv"/>
                             <constraint firstItem="4co-lj-5x0" firstAttribute="trailing" secondItem="4HI-57-427" secondAttribute="trailing" id="EyW-0q-rJg"/>
                             <constraint firstItem="4HI-57-427" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="FB3-V6-hIq"/>
                             <constraint firstItem="4HI-57-427" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="Gw9-Df-6CS"/>
                             <constraint firstItem="4co-lj-5x0" firstAttribute="top" secondItem="4HI-57-427" secondAttribute="bottom" constant="19" id="H7q-N4-jYv"/>
                             <constraint firstAttribute="trailing" secondItem="4HI-57-427" secondAttribute="trailing" constant="16" id="PLm-4q-L9h"/>
                             <constraint firstItem="MOJ-fT-vAF" firstAttribute="leading" secondItem="4HI-57-427" secondAttribute="leading" id="XM0-Ld-uv4"/>
-                            <constraint firstAttribute="trailing" secondItem="xsp-of-lch" secondAttribute="trailing" constant="16" id="Xl4-HW-ans"/>
                             <constraint firstItem="4co-lj-5x0" firstAttribute="centerX" secondItem="4HI-57-427" secondAttribute="centerX" id="ZyS-4Y-xjN"/>
+                            <constraint firstItem="ByX-ZS-mcg" firstAttribute="top" secondItem="MOJ-fT-vAF" secondAttribute="bottom" constant="18" id="aCW-si-QYf"/>
                             <constraint firstItem="4co-lj-5x0" firstAttribute="width" secondItem="4HI-57-427" secondAttribute="width" id="fOn-6A-2Q5"/>
                             <constraint firstItem="MOJ-fT-vAF" firstAttribute="width" secondItem="4HI-57-427" secondAttribute="width" id="gcp-cR-M4F"/>
                             <constraint firstItem="MOJ-fT-vAF" firstAttribute="height" secondItem="4HI-57-427" secondAttribute="height" id="ikt-cw-oF9"/>
-                            <constraint firstItem="xsp-of-lch" firstAttribute="top" secondItem="MOJ-fT-vAF" secondAttribute="bottom" constant="32" id="kJg-le-ZDR"/>
-                            <constraint firstItem="xsp-of-lch" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="lQR-Qk-oUQ"/>
+                            <constraint firstItem="ByX-ZS-mcg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="jOZ-PZ-gZd"/>
+                            <constraint firstAttribute="trailing" secondItem="xsp-of-lch" secondAttribute="trailing" constant="16" id="jTk-ad-1Tg"/>
+                            <constraint firstItem="xsp-of-lch" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="nJN-nT-4jL"/>
+                            <constraint firstAttribute="trailing" secondItem="ByX-ZS-mcg" secondAttribute="trailing" constant="16" id="syb-0M-Ai1"/>
                             <constraint firstItem="4co-lj-5x0" firstAttribute="leading" secondItem="4HI-57-427" secondAttribute="leading" id="tnD-9d-zWF"/>
                             <constraint firstItem="4co-lj-5x0" firstAttribute="height" secondItem="4HI-57-427" secondAttribute="height" id="v7s-Bw-xwe"/>
                             <constraint firstItem="MOJ-fT-vAF" firstAttribute="top" secondItem="4co-lj-5x0" secondAttribute="bottom" constant="20" id="zUY-yx-0DE"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="keyboardNameField" destination="ByX-ZS-mcg" id="pZ4-c8-t0M"/>
                         <outlet property="passwordField" destination="4co-lj-5x0" id="Seu-mz-bt5"/>
                         <outlet property="scoreField" destination="MOJ-fT-vAF" id="hao-7i-sQW"/>
                         <outlet property="usernameField" destination="4HI-57-427" id="MVN-V8-XXy"/>

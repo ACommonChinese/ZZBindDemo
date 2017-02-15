@@ -16,6 +16,8 @@
 		DA4084531E542D6A00462050 /* ZZBindBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4084521E542D6A00462050 /* ZZBindBaseModel.m */; };
 		DA4084591E542E0E00462050 /* UIView+ZZBind.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4084581E542E0E00462050 /* UIView+ZZBind.m */; };
 		DA40845C1E54386900462050 /* StudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA40845B1E54386900462050 /* StudentModel.m */; };
+		DA4084661E54477800462050 /* Computer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4084651E54477800462050 /* Computer.m */; };
+		DA4084691E54478500462050 /* Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4084681E54478500462050 /* Keyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		DA4084581E542E0E00462050 /* UIView+ZZBind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZZBind.m"; sourceTree = "<group>"; };
 		DA40845A1E54386900462050 /* StudentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentModel.h; sourceTree = "<group>"; };
 		DA40845B1E54386900462050 /* StudentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentModel.m; sourceTree = "<group>"; };
+		DA4084641E54477800462050 /* Computer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Computer.h; sourceTree = "<group>"; };
+		DA4084651E54477800462050 /* Computer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Computer.m; sourceTree = "<group>"; };
+		DA4084671E54478500462050 /* Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
+		DA4084681E54478500462050 /* Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keyboard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +78,7 @@
 				DA4084401E54291E00462050 /* ViewController.h */,
 				DA4084411E54291E00462050 /* ViewController.m */,
 				DA4084431E54291E00462050 /* Main.storyboard */,
-				DA40845A1E54386900462050 /* StudentModel.h */,
-				DA40845B1E54386900462050 /* StudentModel.m */,
+				DA40845D1E54474D00462050 /* Model */,
 				DA4084511E542D6A00462050 /* ZZBindBaseModel.h */,
 				DA4084521E542D6A00462050 /* ZZBindBaseModel.m */,
 				DA4084571E542E0E00462050 /* UIView+ZZBind.h */,
@@ -92,6 +97,19 @@
 				DA40843B1E54291E00462050 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA40845D1E54474D00462050 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA40845A1E54386900462050 /* StudentModel.h */,
+				DA40845B1E54386900462050 /* StudentModel.m */,
+				DA4084641E54477800462050 /* Computer.h */,
+				DA4084651E54477800462050 /* Computer.m */,
+				DA4084671E54478500462050 /* Keyboard.h */,
+				DA4084681E54478500462050 /* Keyboard.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +188,8 @@
 				DA4084531E542D6A00462050 /* ZZBindBaseModel.m in Sources */,
 				DA4084591E542E0E00462050 /* UIView+ZZBind.m in Sources */,
 				DA40843F1E54291E00462050 /* AppDelegate.m in Sources */,
+				DA4084661E54477800462050 /* Computer.m in Sources */,
+				DA4084691E54478500462050 /* Keyboard.m in Sources */,
 				DA40843C1E54291E00462050 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +345,7 @@
 				DA4084501E54291E00462050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

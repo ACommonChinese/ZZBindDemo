@@ -11,7 +11,7 @@
 @implementation StudentModel
 
 - (void)printInfo {
-    NSLog(@"username: %@\npassword: %@\nscore: %@", self.username, self.password, self.score);
+    NSLog(@"\nusername: %@\npassword: %@\nscore: %@\n%@\n", self.username, self.password, self.score, self.computer);
 }
 
 @end
