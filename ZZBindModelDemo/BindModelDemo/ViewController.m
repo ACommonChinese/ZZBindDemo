@@ -1,11 +1,15 @@
-# ZZBindDemo
-绑定视图和模型
+//
+//  ViewController.m
+//  BindModelDemo
+//
+//  Created by 刘威振 on 2017/2/15.
+//  Copyright © 2017年 刘威振. All rights reserved.
+//
 
-####使用方法####
-把`ZZBindBaseModel`和`UIView+ZZBind`两个类拖入工程：
+#import "ViewController.h"
+#import "UIView+ZZBind.h"
+#import "StudentModel.h"
 
-
-```
 @interface ViewController () <ZZBindDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
@@ -38,6 +42,3 @@
 }
 
 @end
-```
-
-###因过于简单和没有技术含量，故不加说明###

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4HI-57-427">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YA0-RZ-zsr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4co-lj-5x0">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOJ-fT-vAF">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsp-of-lch">
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="a4C-5e-NJx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="提交">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VXX-pZ-gaO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4co-lj-5x0" firstAttribute="trailing" secondItem="4HI-57-427" secondAttribute="trailing" id="EyW-0q-rJg"/>
+                            <constraint firstItem="4HI-57-427" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="FB3-V6-hIq"/>
+                            <constraint firstItem="4HI-57-427" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="Gw9-Df-6CS"/>
+                            <constraint firstItem="4co-lj-5x0" firstAttribute="top" secondItem="4HI-57-427" secondAttribute="bottom" constant="19" id="H7q-N4-jYv"/>
+                            <constraint firstAttribute="trailing" secondItem="4HI-57-427" secondAttribute="trailing" constant="16" id="PLm-4q-L9h"/>
+                            <constraint firstItem="MOJ-fT-vAF" firstAttribute="leading" secondItem="4HI-57-427" secondAttribute="leading" id="XM0-Ld-uv4"/>
+                            <constraint firstAttribute="trailing" secondItem="xsp-of-lch" secondAttribute="trailing" constant="16" id="Xl4-HW-ans"/>
+                            <constraint firstItem="4co-lj-5x0" firstAttribute="centerX" secondItem="4HI-57-427" secondAttribute="centerX" id="ZyS-4Y-xjN"/>
+                            <constraint firstItem="4co-lj-5x0" firstAttribute="width" secondItem="4HI-57-427" secondAttribute="width" id="fOn-6A-2Q5"/>
+                            <constraint firstItem="MOJ-fT-vAF" firstAttribute="width" secondItem="4HI-57-427" secondAttribute="width" id="gcp-cR-M4F"/>
+                            <constraint firstItem="MOJ-fT-vAF" firstAttribute="height" secondItem="4HI-57-427" secondAttribute="height" id="ikt-cw-oF9"/>
+                            <constraint firstItem="xsp-of-lch" firstAttribute="top" secondItem="MOJ-fT-vAF" secondAttribute="bottom" constant="32" id="kJg-le-ZDR"/>
+                            <constraint firstItem="xsp-of-lch" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="lQR-Qk-oUQ"/>
+                            <constraint firstItem="4co-lj-5x0" firstAttribute="leading" secondItem="4HI-57-427" secondAttribute="leading" id="tnD-9d-zWF"/>
+                            <constraint firstItem="4co-lj-5x0" firstAttribute="height" secondItem="4HI-57-427" secondAttribute="height" id="v7s-Bw-xwe"/>
+                            <constraint firstItem="MOJ-fT-vAF" firstAttribute="top" secondItem="4co-lj-5x0" secondAttribute="bottom" constant="20" id="zUY-yx-0DE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordField" destination="4co-lj-5x0" id="Seu-mz-bt5"/>
+                        <outlet property="scoreField" destination="MOJ-fT-vAF" id="hao-7i-sQW"/>
+                        <outlet property="usernameField" destination="4HI-57-427" id="MVN-V8-XXy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="16"/>
+        </scene>
+    </scenes>
+</document>
